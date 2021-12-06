@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <table>
+            <th>
+                <td>Name</td>
+            </th>
+        
+        {% for stock in stocks %}
+            <tr>
+            <td>{{ stock.name }} </td>
+            <td> <a href="../pickdate/{{stock.id}}/Open/"> See Open Prediction </a></td>
+            <td> <a href="../pickdate/{{stock.id}}/Close/"> See Close Prediction </a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    </body>
+</html>
